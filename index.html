@@ -19,51 +19,123 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
-  <!-- body -->
-
-  <body>
-    <!-- header -->
-
-    <header class="header">
-      <div class="container one">
-        <nav class="nav">
-          <a class="header-a" href="./index.html"
-            >Web<span class="span-web">Studio</span></a
-          >
-          <ul class="header-ul menu-nav">
-            <li class="header-li">
-              <a class="header-ab link" href="./index.html">Studio</a>
-            </li>
-            <li class="header-li">
-              <a class="header-ab" href="">Portfolio</a>
-            </li>
-            <li class="header-li"><a class="header-ab" href="">Contacts</a></li>
+  <header class="header">
+    <div class="container one">
+      <nav class="nav">
+        <a class="header-a" href="./index.html"
+          >Web<span class="span-web">Studio</span></a
+        >
+        <ul class="header-ul menu-nav">
+          <li class="header-li">
+            <a class="header-ab link" href="./index.html">Studio</a>
+          </li>
+          <li class="header-li">
+            <a class="header-ab" href="">Portfolio</a>
+          </li>
+          <li class="header-li"><a class="header-ab" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="address">
+        <ul class="contact-info">
+          <li>
+            <a class="address-a" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="address-a" href="tel:+110001111111">
+              +11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <button type="button" class="burger-btn" data-mobile-open>
+        <svg width="24" height="24" class="burger-icon">
+          <use
+            width="24"
+            height="24"
+            href="./images/icons.svg#icon-burger"
+          ></use>
+        </svg>
+      </button>
+    </div>
+    <!-- mobile -->
+    <div class="mobile-menu" data-mobile>
+      <div class="container mobile-menu-container" data-mobile-close>
+        <button type="button" class="modal-close-button" data-mobile-close>
+          <svg class="svg-button" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-ul">
+            <li class="mobile-li blue">Studio</li>
+            <li class="mobile-li">Portfolio</li>
+            <li class="mobile-li">Contacts</li>
           </ul>
         </nav>
-        <address class="address">
-          <ul class="contact-info">
+        <address class="mobile-address-two">
+          <ul class="mobile-address">
             <li>
-              <a class="address-a" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a class="address-a mobile-tel" href="tel:+110001111111">
+                +11 (000) 111-11-11</a
               >
             </li>
             <li>
-              <a class="address-a" href="tel:+110001111111">
-                +11 (000) 111-11-11</a
+              <a class="address-a mobile-mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
               >
             </li>
           </ul>
         </address>
+        <ul class="mobile-ul-two">
+          <li class="icon-item mobile-icon">
+            <a
+              class="icon-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <svg class="icon-two" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-item">
+            <a class="icon-link" href="https://x.com/home">
+              <svg class="icon-two" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-item">
+            <a class="icon-link" href="https://www.facebook.com/">
+              <svg class="icon-two" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-item">
+            <a class="icon-link" href="https://www.linkedin.com/">
+              <svg class="icon-two" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </header>
+  <!-- body -->
+
+  <body>
+    <!-- header -->
 
     <!-- main -->
 
     <main>
       <!-- section-one -->
 
-      <section class="first-section">
+      <section class="first-section hero">
         <div class="container two">
           <h1 class="h-one">Effective Solutions for Your Business</h1>
           <button class="button-one" type="button" data-modal-open>
@@ -84,8 +156,8 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="first-h-three">Strategy</h3>
-              <p class="first-p">
+              <h3 class="first-h-three yupi">Strategy</h3>
+              <p class="first-p yupii">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -96,8 +168,8 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="first-h-three">Punctuality</h3>
-              <p class="first-p">
+              <h3 class="first-h-three yupi">Punctuality</h3>
+              <p class="first-p yupii">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -108,8 +180,8 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="first-h-three">Diligence</h3>
-              <p class="first-p">
+              <h3 class="first-h-three yupi">Diligence</h3>
+              <p class="first-p yupii">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -120,8 +192,8 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="first-h-three">Technologies</h3>
-              <p class="first-p">
+              <h3 class="first-h-three yupi">Technologies</h3>
+              <p class="first-p yupii">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -139,8 +211,8 @@
             <li class="otli-li">
               <img class="img" src="./images/img5.jpg" alt="chel" />
               <div class="description">
-                <h3 class="first-h-three">Mark Guerrero</h3>
-                <p class="first-p">Product Designer</p>
+                <h3 class="first-h-three ne-yupi">Mark Guerrero</h3>
+                <p class="first-p peshka">Product Designer</p>
                 <ul class="icon-list">
                   <li class="icon-item">
                     <a
@@ -181,8 +253,8 @@
               <img class="img" src="./images/img6.jpg" alt="chel2" />
 
               <div class="description">
-                <h3 class="first-h-three">Tom Ford</h3>
-                <p class="first-p">Frontend Developer</p>
+                <h3 class="first-h-three ne-yupi">Tom Ford</h3>
+                <p class="first-p peshka">Frontend Developer</p>
                 <ul class="icon-list">
                   <li class="icon-item">
                     <a
@@ -222,8 +294,8 @@
             <li class="otli-li">
               <img class="img" src="./images/img7.jpg" alt="chel3" />
               <div class="description">
-                <h3 class="first-h-three">Camila Garcia</h3>
-                <p class="first-p">Marketing</p>
+                <h3 class="first-h-three ne-yupi">Camila Garcia</h3>
+                <p class="first-p peshka">Marketing</p>
                 <ul class="icon-list">
                   <li class="icon-item">
                     <a
@@ -263,8 +335,8 @@
             <li class="otli-li">
               <img class="img" src="./images/img8.jpg" alt="chel4" />
               <div class="description">
-                <h3 class="first-h-three">Daniel Wilson</h3>
-                <p class="first-p">UI Designer</p>
+                <h3 class="first-h-three ne-yupi">Daniel Wilson</h3>
+                <p class="first-p peshka">UI Designer</p>
                 <ul class="icon-list">
                   <li class="icon-item">
                     <a
@@ -352,12 +424,7 @@
             </li>
             <li class="section-two-li">
               <div class="korobka-odyn">
-                <img
-                  class="photos"
-                  src="./images/img11.jpg"
-                  alt="chel"
-                  width="360"
-                />
+                <img class="photos" src="./images/img11.jpg" alt="chel" />
                 <p class="korobka">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -512,9 +579,11 @@
       </div>
     </footer>
 
+    <!-- backdrop -->
+
     <div class="backdrop" data-modal>
-      <div class="modal-window">
-        <button type="button" class="modal-close-button" data-modal-close>
+      <div class="modal-window plus">
+        <button type="button" class="mobile-close-button" data-modal-close>
           <svg class="svg-button" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -599,5 +668,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
